@@ -3,13 +3,13 @@ const express = require ("express")
 require ("dotenv").config ()
 const jwt = require ("jsonwebtoken")
 
-const visualizar = require("../Controllers/visualizar")
-const CriarUser = require("../Controllers/CriarUser")
-const SearchUser = require("../Controllers/SearchUser")
-const AddAgenda = require("../Controllers/AddAgenda")
-const LoginUser = require("../Controllers/LoginUser")
-const DeleteTable = require("../Controllers/DeleteTable")
-const EditarAgenda = require("../Controllers/EditarAgenda")
+const visualizar = require("./Controllers/visualizar")
+const CriarUser = require("./Controllers/CriarUser")
+const SearchUser = require("./Controllers/SearchUser")
+const AddAgenda = require("./Controllers/AddAgenda")
+const LoginUser = require("./Controllers/LoginUser")
+const DeleteTable = require("./Controllers/DeleteTable")
+const EditarAgenda = require("./Controllers/EditarAgenda")
 
 
 
