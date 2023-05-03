@@ -10,6 +10,7 @@ const AddAgenda = require("./Controllers/AddAgenda")
 const LoginUser = require("./Controllers/LoginUser")
 const DeleteTable = require("./Controllers/DeleteTable")
 const EditarAgenda = require("./Controllers/EditarAgenda")
+const Ol = require("./Controllers/Ol")
 
 
 
@@ -34,6 +35,8 @@ function checkToken (req,res,next) {
     }
 }
 
+
+routes.get ("/",Ol)
 //Criar Usuario
 routes.post ("/createdUser", CriarUser)
 
