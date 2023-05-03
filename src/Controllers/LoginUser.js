@@ -5,6 +5,9 @@ require ("dotenv").config ()
 
 
 module.exports = async function (req,res) {
+    try {
+
+    
     const {Email,Senha} = req.body
 
 const Verificar = await Usuario.findAll ({
@@ -36,6 +39,8 @@ res.send ( {token, id:Verificar[0].id})
     res.send ({erro:"Nome ou email incorreto"})
 }
 
-
+    } catch (error) {
+        res.send ("error")
+    }
 
 }

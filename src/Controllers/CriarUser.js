@@ -1,6 +1,8 @@
 const Usuario = require ("../models/Usuarios")
 module.exports = async function (req,res) {
 
+try {
+
 
     const {Nome,Email,Senha} = req.body
 
@@ -16,5 +18,7 @@ module.exports = async function (req,res) {
     const oo =  await Usuario.create ({Nome,Senha,Email})
 
     res.send ({msg:"criado!"})
-
+}catch (error) {
+    res.send ("error")
+}
 } 

@@ -3,6 +3,10 @@ const Agenda = require ("../models/Agendas")
 
 
 module.exports = async function (req,res) {
+
+    try {
+
+    
     const {id,IdTableDelete} = req.params
 
 
@@ -24,4 +28,7 @@ if (op.length === 0) {
 
  res.json ({msg: "tabela deletada!"})
 //  res.send (deleteTable.agendas)
+}catch (error) {
+    res.send ("error")
+}
 }
