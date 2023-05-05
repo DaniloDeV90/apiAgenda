@@ -1,5 +1,5 @@
 const express = require ("express")
-require ("./config/Associations")
+require ("../config/Associations")
 const cors = require ("cors")
 const routes = require ("./routes")
 

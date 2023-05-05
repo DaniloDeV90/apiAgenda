@@ -1,5 +1,5 @@
-const Usuario = require ("../models/Usuarios")
-const Agenda = require ("../models/Agendas")
+const Usuario = require ("../src/models/Usuarios")
+const Agenda = require ("../src/models/Agendas")
 
 Usuario.hasMany (Agenda, {onDelete: "CASCADE", onUpdate: "CASCADE"})
 
